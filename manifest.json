@@ -1,10 +1,29 @@
+
 {
-  "manifest_version": 3,
-  "name": "OS Detector",
-  "version": "1.0",
-  "description": "Detects the operating system of the user's device",
-  "permissions": [],
-  "action": {
-    "default_popup": "popup.html"
+    "manifest_version": 3,
+    "name": "Polyglot",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "hello.html",
+      "default_icon": "hello_extensions.png"
+    },
+    "permissions": [
+      "storage",
+      "clipboardRead"
+    ],
+
+    "commands": {
+      "copy": {
+        "suggested_key": {
+          "default": "Ctrl+C",
+          "mac": "Command+C"
+        },
+        "description": "Copy command"
+      }
+    }
+
   }
-}
