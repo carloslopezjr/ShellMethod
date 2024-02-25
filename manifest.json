@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "OS Detector",
+  "version": "1.0",
+  "description": "Detects the operating system of the user's device",
+  "permissions": [],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
